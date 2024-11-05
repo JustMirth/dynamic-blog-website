@@ -1,1 +1,2 @@
 # dynamic-blog-website
+The goal of this project is to create a website using html, css and javascript, alongside localstorage of the browser in order to create a blog page that can host submitted blogs as well as edit and delete them. This will be done by creating a home page to host show the submitted blog posts before creating additional pages that have creation and editing features. While doing this, all changes will be pushed through github to show the progress ofthe assignment as it happens.
