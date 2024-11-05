@@ -23,7 +23,7 @@ function saveNewPost(title, content, imageUrl) {
     const newPost = {
         title,
         content,
-        imageUrl: imageUrl || ''
+        imageUrl: imageUrl || '',
     };
     posts.push(newPost);
     localStorage.setItem('posts', JSON.stringify(posts));
