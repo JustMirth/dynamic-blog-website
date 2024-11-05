@@ -11,12 +11,11 @@ function loadBlogPosts() {
             postElement.classList.add('post');
             postElement.innerHTML = `
                 <h3><a href="post.html?id=${index}">${post.title}</a></h3>
-                <p>${post.content.substring(0, 100)}...</p>
+                <p>${post.content}...</p>
             `;
             postList.appendChild(postElement);
         });
     }
 }
 
-// Call the function to load posts when the page loads
 window.onload = loadBlogPosts;
