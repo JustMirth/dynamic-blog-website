@@ -1,0 +1,239 @@
+/*General Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    color: black;
+}
+
+header {
+    background-color: silver;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+header h1 {
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: white;
+}
+
+h2, h3 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 10px;
+}
+
+#post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    background-color: silver;
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.post {
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.post h3 {
+    margin: 0;
+    color: black;
+}
+
+.post p {
+    color: black;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+
+/*Post Detail Page Styling*/
+#edit-form {
+    background-color: silver;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border: solid;
+    border-width: 1px;
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;
+
+}
+
+#edit-form label {
+    font-weight: bold;
+    align-content: center;
+    display: block;
+}
+
+#edit-form input,
+#edit-form textarea {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#edit-form button {
+    padding: 3px;
+    background-color:#555;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+}
+
+#edit-form button:hover {
+    background-color: #555;
+}
+
+/*Create new Post Form Styling */
+#create-post-form {
+    background-color: silver;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border: solid;
+    border-width: 1px;
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;
+
+}
+
+#create-post-form label {
+    font-weight: bold;
+    align-content: center;
+    display: block;
+}
+
+#create-post-form input,
+#create-post-form textarea {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#create-post-form button {
+    padding: 3px;
+    background-color:#555;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+}
+
+#create-post-form button:hover {
+    background-color: #555;
+}
+
+/* Mobile-first Layout: Stack posts vertically on small screens */
+@media (max-width: 768px) {
+    #post-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        width: 80%;
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .post img {
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        margin: 0 auto;
+    }
+}
+
+/* Medium Screens: Tablet and small desktops */
+@media (max-width: 1024px) {
+    .post {
+        width: 45%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .post img {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+/* Large Screens: Desktops */
+@media (min-width: 1025px) {
+    .post {
+        width: 30%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .post img {
+        max-width: 100%;
+        height: auto;
+    }
+}

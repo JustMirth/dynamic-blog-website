@@ -45,3 +45,9 @@ document.getElementById('create-post-form').addEventListener('submit', function 
 
     window.location.href = 'index.html';
 });
+
+document.getElementById('create-post-form').style.display = 'flex';
+    document.getElementById('create-post-form').style.flexDirection = 'column';
+    document.getElementById('create-post-form').style.alignItems = 'center';
+    document.getElementById('create-post-form').style.justifyContent = 'center';
+    document.getElementById('create-post-form').style.alignSelf = 'center';
