@@ -1,0 +1,5 @@
+1.) Set up homepage
+2.) allow creation of posts
+3.) Allow viewing and ediitng of posts
+4.) Allow deletion of posts
+5.) Make it look nice
